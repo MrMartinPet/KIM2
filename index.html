@@ -13,7 +13,7 @@
 .section{padding:22px;border-bottom:1px solid var(--line)}.section:nth-child(odd){background:#f8fafc}.head{display:flex;gap:12px;align-items:center;margin-bottom:16px}.head>span{display:grid;place-items:center;flex:0 0 36px;height:36px;border-radius:10px;background:var(--blue);color:#fff;font-weight:900}.head h3{margin:0 0 2px;font-size:1rem;text-transform:uppercase}
 .fields{display:grid;grid-template-columns:repeat(4,1fr);gap:11px}.fields .wide{grid-column:span 2}label{display:block;color:var(--muted);font-size:.72rem;font-weight:900;text-transform:uppercase}input,select,textarea{display:block;width:100%;margin-top:5px;border:1px solid #d0d7de;border-radius:11px;background:#fff;color:var(--ink);padding:10px;font:inherit;font-size:.9rem;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--blue2);box-shadow:0 0 0 3px #15608226}
 .tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}.tabs button,.options button,.matrix button{border:1px solid var(--line);border-radius:12px;background:#fff;padding:11px;cursor:pointer;font-weight:800;color:var(--ink)}.tabs button.active,.options button.selected,.matrix button.selected{color:#fff;background:var(--blue);border-color:var(--blue)}
-.options{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:8px}.options button,.matrix button{display:flex;justify-content:space-between;gap:10px;text-align:left;align-items:center}.options button small,.matrix button small{display:block;font-size:.72rem;font-weight:400;color:var(--muted);margin-top:3px;line-height:1.3}.options button.selected small,.matrix button.selected small{color:#e6f3f8}.options b,.matrix b{white-space:nowrap}.matrix{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px}.matrix button:disabled{cursor:not-allowed;background:#f2f4f7;color:#98a2b3}.matrix button.critical:not(:disabled){border-color:#77a783;background:#eef7ef}.matrix button.critical.selected{background:var(--blue);border-color:var(--blue)}
+.options{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:8px}.options button,.matrix button{display:flex;justify-content:space-between;gap:10px;text-align:left;align-items:center}.sprite{display:block;width:160px;height:90px;flex:0 0 160px;background-image:url("assets/kim2_sprite.png");background-repeat:no-repeat;background-size:800px 180px;background-color:#fff;border:1px solid var(--line);border-radius:8px}.spr-roll{background-position:0 0}.spr-cart{background-position:-160px 0}.spr-steer{background-position:-320px 0}.spr-fixed{background-position:-480px 0}.spr-manip{background-position:-640px 0}.spr-push{background-position:0 -90px}.spr-posture1{background-position:-160px -90px}.spr-posture2{background-position:-320px -90px}.spr-posture4{background-position:-480px -90px}.spr-posture8{background-position:-640px -90px}.transport-types{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:12px}.transport-type{border:1px solid var(--line);border-radius:12px;background:#fff;padding:9px;cursor:pointer;color:var(--ink);text-align:left}.transport-type.selected{border-color:var(--blue);box-shadow:0 0 0 2px #1560821f;background:#eff8fb}.transport-type .sprite{width:100%;height:82px;background-size:729px 164px;margin:0 auto 7px}.transport-type strong{display:block;font-size:.76rem;line-height:1.25}.push-figure{display:flex;justify-content:center;align-items:center;padding:8px 12px 14px}.push-figure .sprite{margin:8px 0}.section-note{margin-top:10px;color:var(--muted);font-size:.76rem;line-height:1.4}.options button small,.matrix button small{display:block;font-size:.72rem;font-weight:400;color:var(--muted);margin-top:3px;line-height:1.3}.options button.selected small,.matrix button.selected small{color:#e6f3f8}.options b,.matrix b{white-space:nowrap}.matrix{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px}.matrix button:disabled{cursor:not-allowed;background:#f2f4f7;color:#98a2b3}.matrix button.critical:not(:disabled){border-color:#77a783;background:#eef7ef}.matrix button.critical.selected{background:var(--blue);border-color:var(--blue)}
 .scorestrip{margin-top:12px;padding:10px 14px;border-radius:11px;background:#edf7fb;display:flex;justify-content:space-between;align-items:center;gap:12px;font-weight:800}.scorestrip strong{font-size:1.5rem;color:var(--blue)}.scorestrip .adjust{display:flex;gap:8px;align-items:center;margin-left:auto}.scorestrip .adjust label{font-size:.66rem}.scorestrip .adjust input{width:90px;margin:0;padding:8px;text-align:center}
 .helper{margin-top:10px;padding:10px 12px;border-radius:10px;background:#fff8df;border:1px solid #ecd994;font-size:.78rem;line-height:1.4}.helper.ok{background:#eef7ef;border-color:#b8d8bf}.helper.danger{background:#fff0ed;border-color:#efb0a4}
 .formula{display:grid;grid-template-columns:repeat(11,auto);align-items:center;justify-content:center;gap:10px;margin:4px 0 18px}.formula>div{min-width:78px;text-align:center;border:1px solid var(--line);border-radius:11px;padding:9px}.formula small,.formula strong{display:block}.formula small{font-size:.62rem;color:var(--muted);text-transform:uppercase;font-weight:800}.formula strong{font-size:1.25rem}.formula i{font-style:normal;font-weight:900;color:var(--muted)}.formula .total{background:var(--blue);color:#fff}.formula .total small{color:#d8edf5}
@@ -21,8 +21,8 @@
 .actions{display:flex;justify-content:flex-end;gap:10px;padding:18px 22px;background:#f8fafc}.actions button{border-radius:11px;padding:11px 16px;font-weight:900;cursor:pointer}.secondary{border:1px solid var(--line);background:#fff}.primary{border:1px solid var(--blue);background:var(--blue);color:#fff}.disc{text-align:center;color:var(--muted);font-size:.7rem;line-height:1.5}.disc a{color:var(--blue)}
 .info-btn{margin-left:auto;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;border:1px solid var(--blue);background:#fff;color:var(--blue);font-weight:900;font-size:1rem;cursor:pointer}.modal{position:fixed;inset:0;background:#0f172a99;display:none;align-items:center;justify-content:center;z-index:50;padding:18px}.modal.open{display:flex}.modal-card{width:min(680px,100%);max-height:85vh;overflow:auto;background:#fff;border-radius:18px;box-shadow:var(--shadow);padding:22px}.modal-card header{display:flex;justify-content:space-between;gap:12px;align-items:start}.modal-card h3{margin:0;color:var(--blue)}.modal-card p,.modal-card li{line-height:1.55;color:#344054}.close{border:0;background:#edf2f6;border-radius:50%;width:34px;height:34px;font-size:1.25rem;cursor:pointer}
 .summary-page{display:none}.summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.summary-card{border:1px solid var(--line);border-radius:10px;padding:10px}.summary-card span,.summary-card small{display:block;color:var(--muted);font-size:.72rem}.summary-card strong{display:block;margin-top:3px}.summary-score{display:flex;align-items:center;gap:15px;padding:16px;border-radius:12px;margin:14px 0}.summary-score b{font-size:2rem}
-@media(max-width:760px){.app{padding:10px}.top p{display:none}.fields{grid-template-columns:1fr 1fr}.fields .wide{grid-column:1/-1}.options,.matrix{grid-template-columns:1fr 1fr}.formula{grid-template-columns:1fr auto 1fr auto 1fr}.formula .hide-mobile{display:none}.formula .total{grid-column:1/-1}.section{padding:16px}}
-@media(max-width:480px){.brand{font-size:.82rem}.method{font-size:.58rem}.top h1{font-size:.86rem}.hero{padding:15px;align-items:flex-start}.hero p,.head p{display:none}.live{min-width:112px;padding:10px}.fields,.options,.matrix{grid-template-columns:1fr}.scorestrip{align-items:flex-start;flex-wrap:wrap}.scorestrip .adjust{width:100%;justify-content:space-between;margin-left:0}.actions{position:sticky;bottom:0}.actions button{flex:1}.summary-grid{grid-template-columns:1fr}}
+@media(max-width:760px){.app{padding:10px}.top p{display:none}.fields{grid-template-columns:1fr 1fr}.fields .wide{grid-column:1/-1}.options,.matrix{grid-template-columns:1fr 1fr}.transport-types{grid-template-columns:repeat(3,1fr)}.formula{grid-template-columns:1fr auto 1fr auto 1fr}.formula .hide-mobile{display:none}.formula .total{grid-column:1/-1}.section{padding:16px}}
+@media(max-width:480px){.brand{font-size:.82rem}.method{font-size:.58rem}.top h1{font-size:.86rem}.hero{padding:15px;align-items:flex-start}.hero p,.head p{display:none}.live{min-width:112px;padding:10px}.fields,.options,.matrix,.transport-types{grid-template-columns:1fr}.sprite{width:120px;height:70px;flex-basis:120px;background-size:600px 140px}.spr-cart{background-position:-120px 0}.spr-steer{background-position:-240px 0}.spr-fixed{background-position:-360px 0}.spr-manip{background-position:-480px 0}.spr-push{background-position:0 -70px}.spr-posture1{background-position:-120px -70px}.spr-posture2{background-position:-240px -70px}.spr-posture4{background-position:-360px -70px}.spr-posture8{background-position:-480px -70px}.transport-type .sprite{transform:none;margin:0 auto 6px}.scorestrip{align-items:flex-start;flex-wrap:wrap}.scorestrip .adjust{width:100%;justify-content:space-between;margin-left:0}.actions{position:sticky;bottom:0}.actions button{flex:1}.summary-grid{grid-template-columns:1fr}}
 @page{size:A4;margin:10mm}@media print{body{background:#fff}.app{width:100%;padding:0}.screen{box-shadow:none}.hero,.section{padding:12px}.actions,.disc,.info-btn,.modal{display:none!important}.result,.scale,.summary-score{print-color-adjust:exact}.summary-page{display:block;page-break-before:always;min-height:277mm;padding:5mm;background:#fff;font-size:9pt}.summary-page h1{margin:0;color:var(--blue);font-size:20pt}.summary-page .brandline{border-bottom:3px solid var(--blue);padding-bottom:6px;margin-bottom:10px}.summary-grid{gap:6px}.summary-card{padding:7px}.summary-score{margin:8px 0;padding:10px}}
 </style>
 </head>
@@ -30,7 +30,7 @@
 <main class="app">
 <header class="top"><div><span class="brand">DOMETIC</span><span class="method">KIM II</span></div><div><h1>Skjuta / dra</h1><p>Digital riskbedömning med stöd av nyckelindikatorer</p></div></header>
 <div class="screen">
-<section class="hero"><div><span class="eye">Riskbedömning</span><h2>Bedöm en aktivitet i taget</h2><p>Olika sätt att hantera laster ska bedömas separat. Vid variation används representativa medelvärden och relevanta maxvärden beaktas.</p></div><div id="live" class="live neutral"><span>Riskpoäng</span><strong>—</strong><small>Ej komplett</small></div></section>
+<section class="hero"><div><span class="eye">Riskbedömning</span><h2>Bedöm en aktivitet i taget</h2><p>Bedömningen avser ett visst arbetsmoments aktivitet under en arbetsdag. Tydligt olika sätt att hantera laster ska bedömas och dokumenteras separat.</p></div><div id="live" class="live neutral"><span>Riskpoäng</span><strong>—</strong><small>Ej komplett</small></div></section>
 
 <section class="section">
 <div class="head"><span>1</span><div><h3>Grunduppgifter och tid</h3><p>Välj korta avstånd/många stopp eller längre avstånd. Endast en metod används.</p></div><button class="info-btn" data-info="time">i</button></div>
@@ -41,7 +41,7 @@
 </section>
 
 <section class="section">
-<div class="head"><span>2</span><div><h3>Massa och hjälpmedel</h3><p>Bedöm total massa som flyttas och det transport-/förflyttningssätt som används.</p></div><button class="info-btn" data-info="mass">i</button></div>
+<div class="head"><span>2</span><div><h3>Massa och hjälpmedel</h3><p>Bedöm massan som ska flyttas: transporthjälpmedlets vikt + lastens vikt, samt typ av transport.</p></div><button class="info-btn" data-info="mass">i</button></div>
 <div class="tabs"><button id="rollingTab">Rullande transporthjälpmedel</button><button id="pushTab">Skjuta</button></div>
 <div id="massTypeWrap"></div>
 <div id="massOptions" class="matrix"></div>
@@ -52,19 +52,19 @@
 <section class="section">
 <div class="head"><span>3</span><div><h3>Positionering och rörelsehastighet</h3><p>Välj kombinationen som bäst beskriver den typiska hanteringen.</p></div><button class="info-btn" data-info="position">i</button></div>
 <div id="positionOptions" class="options"></div>
-<div class="scorestrip"><span>Positionering / hastighet</span><strong id="posScore">—</strong><div class="adjust"><label>Mellanvärde / mycket snabbt</label><input id="posAdjust" type="number" min="1" max="8" step="0.5" placeholder="1–8"></div></div>
+<div class="scorestrip"><span>Positionering / hastighet</span><strong id="posScore">—</strong><div class="adjust"><label>Mellanvärde / mycket snabbt</label><input id="posAdjust" type="number" min="1" max="8" step="0.5" placeholder="1–8"></div></div><div class="section-note">Obs! Normal gånghastighet är cirka 1 m/s.</div>
 </section>
 
 <section class="section">
-<div class="head"><span>4</span><div><h3>Arbetsställning</h3><p>Använd den vanligaste arbetsställningen för aktiviteten.</p></div><button class="info-btn" data-info="posture">i</button></div>
+<div class="head"><span>4</span><div><h3>Arbetsställning</h3><p>Använd den arbetsställning som är karakteristisk och vanligast för det aktuella arbetsmomentet.</p></div><button class="info-btn" data-info="posture">i</button></div>
 <div id="postureOptions" class="options"></div>
-<div class="scorestrip"><span>Arbetsställning</span><strong id="postureScore">—</strong></div>
+<div class="scorestrip"><span>Arbetsställning</span><strong id="postureScore">—</strong></div><div class="section-note">Använd den vanligaste arbetsställningen. Man kan bortse ifrån en stor lutning av överkroppen vid start, bromsning eller styrning, förutsatt att det endast sker vid enstaka tillfällen.</div>
 </section>
 
 <section class="section">
 <div class="head"><span>5</span><div><h3>Arbetsförhållanden</h3><p>Välj de förhållanden som dominerar under aktiviteten.</p></div><button class="info-btn" data-info="conditions">i</button></div>
 <div id="conditionOptions" class="options"></div>
-<div class="scorestrip"><span>Arbetsförhållanden</span><strong id="conditionScore">—</strong></div>
+<div class="scorestrip"><span>Arbetsförhållanden</span><strong id="conditionScore">—</strong></div><div class="section-note">Indikatorer som inte nämns i tabellen måste läggas till efter behov. Arbetsförhållanden ska alltid vara ”goda”.</div>
 </section>
 
 <section class="section">
@@ -99,37 +99,42 @@ const MASS_ROWS=["<50 kg","50 till <100 kg","100 till <200 kg","200 till <300 kg
 const MASS_TYPES={
  roll:{name:"Utan hjälpmedel – lasten rullas",scores:[.5,1,1.5,2,3,4,5,null],critical:[5,6]},
  cart:{name:"Kärra",scores:[.5,1,2,4,null,null,null,null],critical:[2,3]},
- steer:{name:"Vagn / rullvagn / dragkärra utan fasta hjul",scores:[.5,1,2,3,4,5,null,null],critical:[4,5]},
- fixed:{name:"Gallervagn / handkärra / rullbord med fasta hjul / dragkärra",scores:[.5,1,1.5,2,3,4,5,null],critical:[]},
+ steer:{name:"Vagn, rullvagnar, dragkärror utan fasta hjul (endast styrbara hjul)",scores:[.5,1,2,3,4,5,null,null],critical:[4,5]},
+ fixed:{name:"Gallervagnar, handkärror, rullbord med fasta hjul, dragkärror",scores:[.5,1,1.5,2,3,4,5,null],critical:[]},
  manip:{name:"Manipulator",scores:[.5,1,2,4,null,null,null,null],critical:[2,3]}
 };
 const PUSH=[["<10 kg",1],["10 till <25 kg",2],["25 till <50 kg",4],[">50 kg",null]];
+const PIC={
+ roll:"spr-roll",cart:"spr-cart",steer:"spr-steer",fixed:"spr-fixed",manip:"spr-manip",
+ push:"spr-push",
+ posture:{1:"spr-posture1",2:"spr-posture2",4:"spr-posture4",8:"spr-posture8"}
+};
 const POSITION=[
- {id:"low-slow",title:"Låg noggrannhet · långsamt",desc:"Inga exakta avståndskrav; lasten kan rulla till stopp. <0,8 m/s.",score:1},
- {id:"low-fast",title:"Låg noggrannhet · snabbt",desc:"Inga exakta avståndskrav. 0,8–1,3 m/s.",score:2},
- {id:"high-slow",title:"Hög noggrannhet · långsamt",desc:"Noggrann placering/stopp, exakt avstånd eller flera riktningsändringar. <0,8 m/s.",score:2},
- {id:"high-fast",title:"Hög noggrannhet · snabbt",desc:"Noggrann placering/stopp eller flera riktningsändringar. 0,8–1,3 m/s.",score:4}
+ {id:"low-slow",title:"Låg noggrannhet · långsamt",desc:"Inga angivelser av avståndet; lasten kan rullas till den stannar eller fram mot ett stopp. <0,8 m/s.",score:1},
+ {id:"low-fast",title:"Låg noggrannhet · snabbt",desc:"Inga angivelser av avståndet; lasten kan rullas till den stannar eller fram mot ett stopp. 0,8–1,3 m/s.",score:2},
+ {id:"high-slow",title:"Hög noggrannhet · långsamt",desc:"Lasten måste placeras noggrant eller stoppas; avståndet måste följas exakt; flera ändringar av transportriktningen. <0,8 m/s.",score:2},
+ {id:"high-fast",title:"Hög noggrannhet · snabbt",desc:"Lasten måste placeras noggrant eller stoppas; avståndet måste följas exakt; flera ändringar av transportriktningen. 0,8–1,3 m/s.",score:4}
 ];
 const POSTURE=[
  [1,"Upprätt överkropp","Ej vriden."],
- [2,"Framåtböjd eller vriden","Exempelvis ensidig dragrörelse."],
- [4,"Djupt böjd / hukande / knästående","Kroppen djupt böjd i rörelseriktningen eller sittande på huk/knä, böjd."],
- [8,"Böjd och vriden","Kombination av böjd och vriden kropp."]
+ [2,"Antingen framåtböjd eller vriden överkropp","Ensidiga dragrörelser."],
+ [4,"Kroppen djupt böjd i rörelsens riktning","Sittande på huk eller på knä, böjd."],
+ [8,"Kombination av böjd och vriden kropp",""]
 ];
 const CONDITIONS=[
- [0,"Bra","Jämnt, hårt och torrt underlag; ingen lutning eller hinder; hjulen rullar lätt."],
- [2,"Begränsade","Smutsigt/lite ojämnt eller mjukt underlag, svag lutning upp till 2°, hinder eller trögrullande hjul."],
- [4,"Svåra","Ojämnt underlag/gropar, mycket smutsigt, 2–5° lutning eller mycket tröga hjul."],
- [8,"Komplicerade","Steg/trappor, lutning över 5° eller kombinationer av flera ogynnsamma indikatorer."]
+ [0,"Bra","Golvet eller andra underlag är jämna, hårda, utan nivåskillnader, torra; ingen lutning; inga hinder i arbetsområdet; hjulen rullar lätt. Ingen uppenbart slitage i kullagren."],
+ [2,"Begränsade","Smutsigt golv, lite ojämnt eller mjukt; svag lutning på upp till 2 grader; hinder på arbetsplatsen som måste övervinnas; hjulen är smutsiga, de rullar trögt, kullagren är slitna."],
+ [4,"Svåra","Underlag utan golvbeläggning eller ojämnt underlag, gropar, mycket smutsigt; 2 till 5 graders lutning; industritruckar måste ryckas loss när de startar; hjulen är smutsiga, kullagren går mycket trögt."],
+ [8,"Komplicerade","Steg, trappor; lutningar över 5 grader; kombinationer av indikatorer från ”begränsade” till ”svåra".]
 ];
 const INFO={
- time:["Tidspoäng",`Välj endast en princip: <b>korta avstånd/många stopp</b> eller <b>längre avstånd</b>. Gränsen 5 meter är en grov vägledning – avgör om start/bromsning eller längre förflyttningar dominerar.<p>Mellanvärden (interpolation) är tillåtna. Manualens exempel: 40 förflyttningar per arbetsdag kan bedömas som 3 tidspoäng.</p>`],
- mass:["Massa och hjälpmedel",`Bedöm den massa som faktiskt ska flyttas: transporthjälpmedlets vikt + lastens vikt. Vid varierande laster kan ett representativt medelvärde användas, men relevanta maxvärden ska också beaktas.<p><b>Grönmarkerade kombinationer</b> i originaltabellen är kritiska eftersom kontrollen av lasten i hög grad beror på skicklighet och fysisk styrka. <b>Tomma kombinationer</b> ska undvikas eftersom nödvändiga rörelsekrafter lätt kan bli för höga.</p>`],
- position:["Positionering och rörelsehastighet",`Låg noggrannhet betyder att inga exakta avstånd behöver följas och lasten kan rulla till stopp. Hög noggrannhet innebär noggrann placering/stopp, exakta avstånd eller flera riktningsändringar.<p>"Snabbt" (0,8–1,3 m/s) motsvarar ungefär normal gång. Vid snabbare rörelser kan poängen behöva höjas ytterligare; manualen anger att 4 i enskilda fall kan bli 8. Interpolation är tillåten.</p>`],
- posture:["Arbetsställning",`Använd den arbetsställning som är karakteristisk och vanligast för aktiviteten. Vid flera återkommande ställningar kan ett representativt medelvärde användas. Stor överkroppslutning vid enstaka start, bromsning eller styrning kan bortses från.`],
- conditions:["Arbetsförhållanden",`Använd de arbetsförhållanden som dominerar. Tillfälligt sämre förhållanden utan säkerhetsbetydelse ska inte styra bedömningen. Arbetsmiljöverkets manual anger att arbetsförhållanden i princip alltid ska vara "goda".`],
- valuation:["Utvärdering",`Riskpoäng = (massa/hjälpmedel + positionering/hastighet + arbetsställning + arbetsförhållanden) × tidspoäng × 1,3.<p>Riskområdena är en grov orientering och gränserna är flytande. Höga delpoäng visar vilka faktorer som bör prioriteras för åtgärd.</p>`]
-};
+ time:["Tidspoäng",`Bestäm tidspoängen med tabellen för <b>kortare avstånd med täta stopp</b> eller för <b>längre avstånd</b> – välj endast en kolumn.<p>Gränsen 5 meter är en grov uppskattning. Vid tveksamhet: avgör vad som förekommer oftast, att starta och bromsa eller att dra längre sträckor.</p><p>Mellansteg (interpolation) är tillåtna. Exempel: 40 förflyttningar per arbetsdag kan bedömas som 3 tidspoäng.</p>`],
+ mass:["Massa och hjälpmedel",`Bestäm massan som ska flyttas som <b>vikt av transport plus last</b> och beakta typ av transport/teknisk utrustning.<p>Rullvagnar utan handtag förekommer ofta. Skilj mellan rullvagnar utan fasta hjul (styrbara) och med fasta hjul (ej styrbara).</p><p>Vid olika lastvikter kan ett medelvärde användas. Maxvärden ska ändå beaktas även om de förekommer mindre ofta.</p><p><b>Gröna områden</b> är kritiska eftersom kontrollen i hög grad beror på skicklighet och fysisk styrka. <b>Tomma områden</b> ska undvikas.</p>`],
+ position:["Positionering och rörelsehastighet",`Bestäm poängen med stöd av tabellen. Rörelsehastigheten <b>snabb</b> motsvarar normal gång. Broschyren anger cirka 1 m/s.<p>Om snabbare rörelser förekommer kan tabellen utvidgas; en 4 kan i enskilda fall bli en 8. Interpolation är tillåten.</p>`],
+ posture:["Arbetsställning",`För hantering av last ska de arbetsställningar som är karakteristiska för det aktuella arbetsmomentet användas. Om olika arbetsställningar förekommer kan ett medelvärde ge poängen.<p>Använd den vanligaste arbetsställningen. Man kan bortse från en stor lutning av överkroppen vid start, bromsning eller styrning om det bara sker vid enstaka tillfällen.</p>`],
+ conditions:["Arbetsförhållanden",`För bestämning av poäng ska de arbetsförhållanden som dominerar under arbetsdagen användas. Tillfälligt sämre arbetsförhållanden utan betydelse för säkerheten ska inte beaktas.<p>Indikatorer som inte nämns i tabellen måste läggas till efter behov. Arbetsförhållanden ska alltid vara <b>”goda”</b>.</p>`],
+ valuation:["Utvärdering",`Utvärderingen görs genom att poängen för nyckelindikatorerna adderas och multipliceras med tidspoängen. Riskpoängen multipliceras därefter med faktor <b>1,3</b>.<p>Högre poäng visar var åtgärder ska prioriteras: organisatoriska åtgärder vid hög tidspoäng, lägre lastvikt eller transporthjälpmedel vid hög massapoäng, förbättrad styrning/beting vid hög poäng för hastighet/positionering och förbättrad arbetsplatsutformning vid hög arbetsställningspoäng.</p>`]
+}
 const initial=()=>({task:"",department:"",assessor:"",date:new Date().toISOString().slice(0,10),timeMode:"short",timeIdx:null,timeScore:null,massMode:"rolling",massType:"roll",massIdx:null,massScore:null,massCritical:false,positionId:null,posScore:null,posture:null,conditions:null,notes:""});
 let S=initial();try{const saved=JSON.parse(localStorage.kim2||"null");if(saved)S={...S,...saved}}catch(e){}
 const $=id=>document.getElementById(id),save=()=>localStorage.kim2=JSON.stringify(S),fmt=x=>x==null?"—":Number(x).toLocaleString("sv-SE",{maximumFractionDigits:1});
@@ -147,17 +152,17 @@ function massSelection(){
 function renderMass(){
  $("rollingTab").className=S.massMode==="rolling"?"active":"";$("pushTab").className=S.massMode==="push"?"active":"";
  if(S.massMode==="rolling"){
-   $("massTypeWrap").innerHTML=`<label style="margin-bottom:12px">Typ av transport / förflyttning<select id="massType">${Object.entries(MASS_TYPES).map(([k,v])=>`<option value="${k}" ${S.massType===k?"selected":""}>${v.name}</option>`).join("")}</select></label>`;
-   $("massType").onchange=e=>{S.massType=e.target.value;S.massIdx=null;S.massScore=null;S.massCritical=false;save();render()};
+   $("massTypeWrap").innerHTML=`<div class="transport-types">${Object.entries(MASS_TYPES).map(([k,v])=>`<button class="transport-type ${S.massType===k?"selected":""}" data-masstype="${k}"><span class="sprite ${PIC[k]}" aria-hidden="true"></span><strong>${v.name}</strong></button>`).join("")}</div>`;
+   document.querySelectorAll("[data-masstype]").forEach(b=>b.onclick=()=>{S.massType=b.dataset.masstype;S.massIdx=null;S.massScore=null;S.massCritical=false;save();render()});
    const t=MASS_TYPES[S.massType];
-   $("massOptions").innerHTML=MASS_ROWS.map((r,i)=>{const sc=t.scores[i],crit=t.critical.includes(i);return `<button data-mass="${i}" ${sc==null?"disabled":""} class="${S.massIdx===i?"selected ":""}${crit?"critical":""}"><span><strong>${r}</strong><small>${sc==null?"Kombinationen ska undvikas":crit?"Kritiskt område i originaltabellen":"Tillåten kombination"}</small></span><b>${sc==null?"—":sc+" p"}</b></button>`}).join("");
+   $("massOptions").innerHTML=MASS_ROWS.map((r,i)=>{const sc=t.scores[i],crit=t.critical.includes(i);return `<button data-mass="${i}" ${sc==null?"disabled":""} class="${S.massIdx===i?"selected ":""}${crit?"critical":""}"><span><strong>${r}</strong><small>${sc==null?"Kombinationen ska undvikas":crit?"Kritiskt område i originaltabellen":"Poäng enligt KIM 2-tabellen"}</small></span><b>${sc==null?"—":sc+" p"}</b></button>`}).join("");
  }else{
-   $("massTypeWrap").innerHTML="";
+   $("massTypeWrap").innerHTML=`<div class="push-figure"><span class="sprite ${PIC.push}" aria-label="Piktogram för skjuta"></span></div>`;
    $("massOptions").innerHTML=PUSH.map((o,i)=>`<button data-mass="${i}" ${o[1]==null?"disabled":""} class="${S.massIdx===i?"selected":""}"><span><strong>${o[0]}</strong><small>${o[1]==null?"Ska undvikas enligt tabellen":"Skjuta"}</small></span><b>${o[1]==null?"—":o[1]+" p"}</b></button>`).join("");
  }
  document.querySelectorAll("[data-mass]").forEach(b=>b.onclick=()=>{S.massIdx=+b.dataset.mass;const m=massSelection();S.massScore=m?.score??null;S.massCritical=!!m?.critical;save();render()});
  const m=massSelection();$("massScore").textContent=fmt(S.massScore);const note=$("massNote");
- if(S.massCritical){note.style.display="block";note.className="helper";note.innerHTML="<b>Kritiskt område.</b> Kontroll av lastens rörelse beror i hög grad på skicklighet och fysisk styrka."}
+ if(S.massCritical){note.style.display="block";note.className="helper";note.innerHTML="<b>Kritiskt område.</b> Kontroll av industritruckens/lastens rörelser beror i hög grad på skicklighet och fysisk styrka."}
  else if(m&&m.score!=null){note.style.display="block";note.className="helper ok";note.textContent="Vald kombination kan poängsättas enligt KIM 2-tabellen."}
  else note.style.display="none";
 }
@@ -167,11 +172,11 @@ function renderPosition(){
  $("posAdjust").value=S.posScore??"";$("posScore").textContent=fmt(S.posScore);
 }
 function renderSimple(id,data,key,scoreId){
- $(id).innerHTML=data.map(o=>`<button data-simple="${key}:${o[0]}" class="${S[key]===o[0]?"selected":""}"><span><strong>${o[1]}</strong><small>${o[2]}</small></span><b>${o[0]} p</b></button>`).join("");
+ $(id).innerHTML=data.map(o=>{const img=key==="posture"?PIC.posture[o[0]]:"";return `<button data-simple="${key}:${o[0]}" class="${S[key]===o[0]?"selected":""}">${img?`<span class="sprite ${img}" aria-hidden="true"></span>`:""}<span><strong>${o[1]}</strong><small>${o[2]}</small></span><b>${o[0]} p</b></button>`}).join("");
  document.querySelectorAll(`[data-simple^="${key}:"]`).forEach(b=>b.onclick=()=>{S[key]=+b.dataset.simple.split(":")[1];save();render()});
  $(scoreId).textContent=fmt(S[key]);
 }
-function riskInfo(v){return v<10?[1,"Låg belastningssituation","Fysisk överbelastning är osannolik."]:v<25?[2,"Ökad belastningssituation","Fysisk överbelastning är möjlig för personer med lägre fysisk kapacitet. Förbättrad utformning är fördelaktig."]:v<50?[3,"Kraftigt ökad belastningssituation","Fysisk överbelastning är möjlig även för personer med normal kapacitet. Ny utformning rekommenderas."]:[4,"Hög belastningssituation","Fysisk överbelastning är sannolik. Ny utformning av arbetsplatsen är nödvändig."]}
+function riskInfo(v){return v<10?[1,"Låg belastningssituation","Fysisk överbelastning är osannolik."]:v<25?[2,"Ökad belastningssituation","Fysisk överbelastning är möjlig för personer med lägre fysisk kapacitet. För denna grupp är det fördelaktigt att ändra arbetsplatsens utformning."]:v<50?[3,"Kraftigt ökad belastningssituation","Fysisk överbelastning möjlig även för personer med normal kapacitet. En ny utformning av arbetsplatsen rekommenderas."]:[4,"Hög belastningssituation","Fysisk belastning är sannolik. Ny utformning av arbetsplatsen är nödvändig."]}
 function renderResult(){
  const complete=[S.timeScore,S.massScore,S.posScore,S.posture,S.conditions].every(v=>v!==null&&v!==undefined&&v!=="");
  $("fMass").textContent=fmt(S.massScore);$("fPos").textContent=fmt(S.posScore);$("fPosture").textContent=fmt(S.posture);$("fConditions").textContent=fmt(S.conditions);$("fTime").textContent=fmt(S.timeScore);
